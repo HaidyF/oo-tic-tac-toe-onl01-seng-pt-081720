@@ -60,31 +60,12 @@ class TicTacToe
   end
 
   def won?
-    # flag = false
-    # counter = 0
     WIN_COMBINATIONS.detect do |combo|
        temp = @board[combo[0]]
        temp1 = @board[combo[1]]
        temp2 = @board[combo[2]]
        temp == temp1 && temp2 == temp && position_taken?(combo[0])
      end
-      #  x.each do |y|
-      #    if @board[y] == ( " " )
-      #       flag = false
-      #       counter = 0
-      #     elsif @board[y] != temp
-      #       flag = false
-      #       counter = 0
-      #     elsif @board[y] == temp
-      #       flag = true
-      #       counter += 1
-      #       if counter == 3
-      #         return x
-      #       end
-      #     end
-      #   end
-      # end
-      #     return false
       end
 
       def full?
